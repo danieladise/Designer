@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniela Designer de Unhas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    :root {
+      --rosa-principal: #f8d4e4;
+      --rosa-escuro: #e08ab6;
+      --branco: #fff;
+      --dourado: #d2b48c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, var(--rosa-principal), var(--branco));
+      color: #4d3a3a;
+    }
+
+    a {
+      color: var(--rosa-escuro);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: var(--dourado);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    .site-header {
+      background: var(--branco);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--rosa-escuro);
+    }
+
+    .nav a {
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #af5d8c;
+    }
+
+    .btn {
+      background-color: var(--rosa-escuro);
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      font-weight: 600;
+      border: none;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #cf72a7;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--rosa-escuro);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .about p, .services p {
+      max-width: 700px;
+      margin: 0 auto 1rem;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .services ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #74475a;
+    }
+
+    .gallery .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .site-footer {
+      background: var(--rosa-principal);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #704c5a;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        display: none;
+        flex-direction: column;
+      }
+      .nav.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">Daniela Designer</div>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Estilo, sofisticação e charme<br>a cada esmalte.</h2>
+      <a href="https://wa.me/557388212003" class="btn">Agende pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="container">
+      <h3>Sobre Daniela</h3>
+      <p>Localizada em Jequié, Daniela transforma cada atendimento em uma experiência de beleza, cuidado e estilo. Com profissionalismo e delicadeza, ela oferece um serviço acolhedor que valoriza cada detalhe.</p>
+    </div>
+  </section>
+
+  <section id="servicos" class="services">
+    <div class="container">
+      <h3>Serviços</h3>
+      <ul>
+        <li>Manicure</li>
+        <li>Pedicure</li>
+      </ul>
+      <p><strong>Horário de atendimento:</strong> 07:00 às 19:00</p>
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery">
+    <div class="container">
+      <h3>Galeria</h3>
+      <div class="grid">
+        <img src="https://i.imgur.com/fzzXziA.jpeg" alt="Unha 1">
+        <img src="https://i.imgur.com/ZPeo7ve.jpeg" alt="Unha 2">
+        <img src="https://i.imgur.com/EkvjYXI.jpeg" alt="Unha 3">
+        <img src="https://i.imgur.com/SfYO8F3.jpeg" alt="Unha 4">
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato" class="site-footer">
+    <div class="container">
+      <p>📍 R. Francisco Mendes, 63 - Jequiezinho, Jequié - BA</p>
+      <p>📲 <a href="tel:+557388212003">(73) 8821-2003</a> | <a href="https://www.instagram.com/daniela_dsfortaleza" target="_blank">@daniela_dsfortaleza</a></p>
+      <p>© 2025 Daniela Designer de Unhas</p>
+    </div>
+  </footer>
+</body>
+</html>
